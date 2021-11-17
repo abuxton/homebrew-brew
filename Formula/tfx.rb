@@ -21,10 +21,10 @@ class Tfx < Formula
     #   sha256 "97d7ac9145ffdf256ab91045a4857a640ecaa7c56bbd66b61fb70990620f3d33"
   end
 
-  if OS.doze? && Hardware::CPU.intel?
-    url 'https://github.com/straubt1/tfx/releases/download/${version}/tfx_windows_amd'
-    #   sha256 "7cb8a2611abf962e25bc6ba943bc80e48d242d02edb718c0b3fb86c47c28a410"
-  end
+  #   if OS.windows? && Hardware::CPU.intel?
+  #     url 'https://github.com/straubt1/tfx/releases/download/${version}/tfx_windows_amd'
+  #     sha256 "7cb8a2611abf962e25bc6ba943bc80e48d242d02edb718c0b3fb86c47c28a410"
+  #   end
 
   conflicts_with 'tfx'
 
