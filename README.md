@@ -1,5 +1,3 @@
-
-
 # Private Homebrew Taps <img src="https://brew.sh/assets/img/homebrew-256x256.png" height="72">
 
 This is a custom [Homebrew](https://brew.sh) tap various software.
@@ -8,8 +6,8 @@ This is a custom [Homebrew](https://brew.sh) tap various software.
 
 You can add the custom tap in a MacOS terminal session using:
 
-```
-$ brew tap abuxton/tap
+```shell
+brew tap abuxton/tap
 ```
 
 ## Installing Formulae
@@ -18,16 +16,17 @@ Once the tap has been added, use the instructions below to install the software 
 
 ### Installing the Latest formula
 
-Thanks to < https://stackoverflow.com/a/68569754/2362673 >
+Thanks to <https://stackoverflow.com/a/68569754/2362673>
 
 First install `jq`
-```
+
+```shell
 brew install jq
 ```
 
 Then add the following function to your .zshrc or equivalent (like .bashrc)
 
-```
+```shell
 # Lists formulas from a given brew tap
 # Call it with one or more taps to see their formulas
 #   e.g.: brew-list-formulas tap/tap othertap/othertap
@@ -53,8 +52,18 @@ function brew-list-formulas
 
 Usage
 
-```
+```shell
+$ brew-list-formulas
+Please specify one or more taps whose formulas you want listed.
+  e.g.: brew-list-formulas tap/tap othertap/othertap
+
+Available taps are:
+
+abuxton/tap
+...
+
 $ brew-list-formulas abuxton/tap
+Formulas for tap(s) abuxton/tap are:
+...
 
 ```
-
