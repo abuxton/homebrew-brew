@@ -8,6 +8,8 @@ You can add the custom tap in a MacOS terminal session using:
 
 ```shell
 brew tap abuxton/tap
+# see Installing formulae below for helper function brew-list-formulae
+brew install abuxton/tap/<name>
 ```
 
 ## Installing Formulae
